@@ -1,7 +1,7 @@
-body
+body 
 	margin: 0
 	padding: 0
-
+	font-family: Arial
 
 $Weinrot: #FEF3F3
 
@@ -38,7 +38,6 @@ $Schwarz: #1A1A1A
 	
 #image-banner
 	display: flex
-	border: 0
 	width: 100%
 
 
@@ -85,7 +84,7 @@ li a
 
 	
 li a:hover
-	color: #FCB6A7	
+	color: #B5B4B3	
 
 
 @media screen and (max-width: 800px)
@@ -108,6 +107,7 @@ li a:hover
 	flex-direction: column
 	position: relatve
 	align-items: center
+	color: #3E3E3E
 
 .beginn-background-part
 	position: relatve
@@ -119,16 +119,122 @@ li a:hover
 	position: absolute
 	font-size: 4vw
 	margin-left: 2%
-	
+	color: #BABABA
 #was
 	width: 100%
 	
 	
 
+
+
+// *************************** form - container****************************
+
+
+
+.container1
+	position: absolute
+	background-color: rgba(206,206,206,0.70) 
+	margin-top: 12%
+	height: 60vw
+	width:  80%
+	border: 5px solid darkgrey
+	border-radius: 0% 30% 0% 30% 
+ 	
+
+#container-heading
+	font-size: 4vw
+	text-align: center
+
+
+	
+.form-container
+	display: flex
+	flex-direction: column
+
+#form
+	display: flex
+	flex-direction: row
+	flex-wrap: wrap
+	justify-content: space-around
+	margin-top: -8vw
+
+// ******** extend parts for the form ***********
+.p-types
+	font-size: 2vw
+	font-weight: bold
+	margin-bottom: 1%
+	padding-top: 3vw
+
+.input-types
+	width: 90%
+	height: 50% 
+	font-size: 2vw
+// ***********************************************
+
+.input-type
+	width: 40%
+	margin-top: 3vw
+.input-type p
+	@extend .p-types
+
+.input-type input
+	@extend .input-types
+
+.input-type input:focus 
+	border: 3px solid #555
+
+.selector-type
+	width: 40%
+	margin-top: 3vw
+.selector-type p
+	@extend .p-types
+	
+.selector-type select
+	@extend .input-types
+
+.selector-type select:focus 
+	border: 3px solid #555
+
+// **********************submit-container**************
+
+.submit-container
+	margin-top: 6vw
+	
+#submit-button
+	display: flex
+	width: 100%
+	justify-content: center
+		
+
+#submit-button input
+	width: 30%
+	height: 5vw
+	background-color: green
+	font-size: 4vw
+	border-radius: 50vw
+	color: #BABABA
+	border: 0px solid white
+
+#submit-button input:hover
+	background-color: darkgreen
+
+
+#print
+	display: flex
+	font-size: 4vw
+	color: green
+	margin-top: 5vw
+	justify-content: center
+// ******************************************************************
+
+
+// ***********text in grey uncomplicated car covering***************
+
+
 .middle-background-part
 	display: flex
 	flex-direction: column
-	background-color: grey
+	background-color: lightgrey
 	width: 100%
 	height: 30vw
 	text-align: center
@@ -143,42 +249,73 @@ li a:hover
 	margin-top: 0%
 	font-size: 3vw
 
-
-.container1
-	position: absolute
-	background-color: rgba(206,206,206,0.30) 
-	margin-top: 12%
-	height: 20%
-	width:  80%
+// *******************************************************
 
 
 
+// *******************container2*************************
 
 
+.container2
+	display: flex
+	flex-direction: row
+	justify-content: center
+	justify-content: space-around
+	width: 100%
+	margin-top: 5vw
+	margin-bottom: 5vw
+
+// ********************extend part*********************
+
+.box
+	width: 38%
+	height: 35vw
+	border: 1px solid black
+	padding-left: 3vw
+	box-shadow: 0px 1px 5px 0px
+	border: grey
+	border-top: 2px solid black
+	color: #3E3E3E 
+
+.list
+	display: flex
+	flex-direction: column
+	justify-content: space-around
+	height: 10vw
+
+// ***********************************************
+.box1
+	@extend .box
 
 
+.box2
+	@extend .box
 
 
+.box1 ul
+	@extend .list
+
+.box2 ul
+	@extend .list
 
 
+h2
+	font-size: 2.5vw
+
+h5
+	font-size: 1.5vw
 
 
+.li
+	font-size: 2vw
+	margin-left: -4vw
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+h4
+	font-size: 2vw
+	color: black
+.p
+	font-size: 1.8vw
 
 
 
@@ -198,9 +335,10 @@ li a:hover
 	align-items: flex-end
 	
 #image-logo2
-	justify-content: center
-	width: 30%
-		
+	align-items: center
+	width: 20%
+	margin-right: 5vw
+	margin-top: 3vw	
 #end 
 	text-align: center
 	font-size: 2vw

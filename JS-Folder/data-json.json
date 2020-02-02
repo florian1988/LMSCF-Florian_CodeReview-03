@@ -1,0 +1,20 @@
+// leonardo, michaelangelo, donatello, Raffael
+// 
+console.log("turtle-Team");
+
+var members = [ {"name": "Michaelangelo", "bandana":"Orange"},
+	{"name":"Donnatello", "bandana":"Violett"},
+	{"name":"Raphael", "bandana":"Rot"},
+	{"name":"Leonardo", "bandana":"Blau"}];
+
+
+
+var turtles = " ";
+
+for( var i in members) {
+	turtles += '<br>' +
+	"<tr><td>" + members[i].name +'</td>'+
+	"<td>" + members[i].bandana + "</td></tr>";
+}
+
+document.getElementById("data-turtle").innerHTML = turtles;

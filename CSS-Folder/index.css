@@ -89,6 +89,9 @@ li a:hover {
 #was {
   width: 100%; }
 
+@media screen and (max-width: 800px) {
+  .beginn-background-part {
+    justify-content: center; } }
 .container1 {
   position: absolute;
   background-color: rgba(206, 206, 206, 0.7);
@@ -113,6 +116,10 @@ li a:hover {
   justify-content: space-around;
   margin-top: -8vw; }
 
+@media screen and (max-width: 800px) {
+  .container1 {
+    width: 100%;
+    border-radius: 0%; } }
 .p-types, .input-type p, .selector-type p {
   font-size: 2vw;
   font-weight: bold;
@@ -224,6 +231,18 @@ h4 {
 .p {
   font-size: 1.8vw; }
 
+@media screen and (max-width: 800px) {
+  .container2 {
+    flex-direction: column;
+    align-items: center; }
+
+  .box, .box1, .box2 {
+    width: 80%;
+    text-align: center;
+    margin-top: 5vw; }
+
+  .li {
+    margin-left: 25vw; } }
 .footer {
   display: flex;
   flex-direction: column;
@@ -249,6 +268,25 @@ h4 {
 
 @media screen and (max-width: 800px) {
   .footer {
-    align-items: center; } }
+    align-items: center; }
+
+  #image-logo2 {
+    margin-right: 0; } }
+.table {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+th {
+  border: 1px solid black;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  text-align: center; }
+
+td {
+  border: 1px solid black;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  text-align: center; }
 
 /*# sourceMappingURL=index.css.map */

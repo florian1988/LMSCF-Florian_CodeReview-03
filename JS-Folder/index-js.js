@@ -1,36 +1,34 @@
 
-
-console.log("autor: florian");
-
-
-
-var name = document.getElementById("wieso");
+var namee = document.getElementById("wieso").value;
 var age = document.getElementById("alter").value;
 var horsepower = document.getElementById("pferde").value;
 var country = document.getElementById("land").value;
-var c = 12;
+// var c = 20;
 
-function wert(){
-	document.getElementById("print").innerHTML = c;
+
+
+// function wert(){
+// 	document.getElementById("putitout").innerHTML = namee;
+
+// }
+
+var x = 3;
+
+
+function calculateInsurance(){
+
+if (country = "Austria"){
+   	result = (Number(horsepower) * 100)/(Number(age) + 50); 
+} else if (country = "Hungary"){
+  	result = (Number(horsepower) * 120)/(Number(age) + 100); 
+ } else {
+  	result = (Number(horsepower) * 150)/((Number(age) + x) + 50);
 }
 
 
+ document.getElementById("putitout").innerHTML = namee + ", your insurance costs: " + result; 
+ }
 
-
-// // function bald(){
-
-// // // if (country = Austria){
-// // // 	result = (Number(horsepower) * 100) / (Number(age) + 50); 
-// // // } else if (country = Hungary){
-// // // 	result = (Number(horsepower) * 120) / (Number(age) + 100);
-// // // } else (country = Greece){
-// // // 	result = (Number(horsepower) * 150) / (((Number)age+3) + 50);
-// // // }
-
-
-// document.getElementById("print").innerHTML = name + ", your insurance costs: " + result; 
-// }
-
-var elementNode = document.getElementById("button");
-elementNode.onclick = wert;
+var elementNode = document.getElementById("buttton");
+elementNode.onclick = calculateInsurance; 
 

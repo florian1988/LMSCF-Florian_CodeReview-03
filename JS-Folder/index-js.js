@@ -1,11 +1,4 @@
 
-var namee = document.getElementById("wieso").value;
-var age = document.getElementById("alter").value;
-var horsepower = document.getElementById("pferde").value;
-var country = document.getElementById("land").value;
-// var c = 20;
-
-
 
 // function wert(){
 // 	document.getElementById("putitout").innerHTML = namee;
@@ -16,6 +9,15 @@ var x = 3;
 
 
 function calculateInsurance(){
+ var namee = document.getElementById("wieso").value;
+console.log(namee);
+ var age = document.getElementById("alter").value;
+console.log(age);
+ var horsepower = document.getElementById("pferde").value;
+console.log(horsepower);
+ var country = document.getElementById("land").value;
+// var c = 20;
+console.log(country);
 
 if (country = "Austria"){
    	result = (Number(horsepower) * 100)/(Number(age) + 50); 

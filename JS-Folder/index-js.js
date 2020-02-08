@@ -16,19 +16,18 @@ console.log(age);
  var horsepower = document.getElementById("pferde").value;
 console.log(horsepower);
  var country = document.getElementById("land").value;
-// var c = 20;
 console.log(country);
 
-if (country = "Austria"){
+if (country == "Austria"){
    	result = (Number(horsepower) * 100)/(Number(age) + 50); 
-} else if (country = "Hungary"){
+} else if (country == "Hungary"){
   	result = (Number(horsepower) * 120)/(Number(age) + 100); 
  } else {
   	result = (Number(horsepower) * 150)/((Number(age) + x) + 50);
 }
 
 
- document.getElementById("putitout").innerHTML = namee + ", your insurance costs: " + result; 
+ document.getElementById("putitout").innerHTML = namee + ", your insurance costs: " + result.toFixed(2) +"€"; 
  }
 
 var elementNode = document.getElementById("buttton");
